@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>何かお話ししてください</p>
+    <form action="get.php" method="post">
+      <input type="text" name="a"/>
+      <input type="submit" value="送信" />
+    </form>
+  </body>
+</html>
+
+
+
+
+<!-- GET送信
+・URLに送信データをつけるため外部から丸見え
+・$_GETでデータを受け取る
+・送信できるデータはテキストだけ。情報量に制限あり。 -->
+
+
+<!-- POST送信
+・URLにデータをつけないので、外部から見えにくい
+・$_POSTでデータを受け取る
+・画像など、すべての種類のデータが送信できる。大量のデータも送信可能。 -->
